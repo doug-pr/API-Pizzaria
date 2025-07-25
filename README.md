@@ -99,7 +99,7 @@ pip install -r requirements.txt
    
    O arquivo `.env` já está configurado com valores padrão:
    ```env
-   SECRET_KEY=
+   SECRET_KEY="SUA KEY"
    ACCESS_TOKEN_EXPIRE_MINUTES=30
    ```
 
@@ -133,13 +133,6 @@ uvicorn main:app --reload
 ├── .env                   # Variáveis de ambiente
 ├── .gitignore            # Arquivos ignorados pelo Git
 ├── alembic.ini           # Configuração do Alembic
-├── banco.db              # Banco de dados SQLite
-├── alembic/              # Migrações do banco de dados
-│   ├── env.py
-│   ├── script.py.mako
-│   └── versions/
-│       ├── fadaa0927de6_initial_migration.py
-│       └── 49ddccc1fc90_adicionando_itens_no_pedido.py
 └── testes.py             # Arquivo de testes
 ```
 
